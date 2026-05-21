@@ -1,0 +1,22 @@
+{
+  "name": "cmaq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devCss": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwind-animations": "^1.0.1",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "^3.4.2",
+    "@tailwindcss/typography": "^0.5.19",
+    "prettier-plugin-tailwindcss": "^0.8.0"
+  }
+}

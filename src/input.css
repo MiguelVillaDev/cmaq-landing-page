@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "tailwind-animations";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-dark: #0d1321;
+  --color-navy: #1d2d44;
+  --color-steel: #3e5c76;
+  --color-mist: #748cab;
+  --color-cream: #f0ebd8;
+}
+
+@layer components {
+  .container-cmaq {
+    @apply mx-auto max-w-7xl px-6;
+  }
+}
+
+.swiper-button-next .swiper-navigation-icon,
+.swiper-button-prev .swiper-navigation-icon {
+  display: none;
+}
