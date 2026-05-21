@@ -14,7 +14,9 @@
   </head>
   <body class="text-navy bg-white">
     <header>
-      <nav class="fixed top-0 left-0 z-50 w-full bg-white">
+      <nav
+        class="fixed top-0 left-0 z-50 w-full text-white transition-colors duration-300"
+      >
         <div
           class="mx-auto flex max-w-7xl flex-wrap items-center justify-between py-2 md:flex md:flex-nowrap"
         >
@@ -28,7 +30,7 @@
 
           <ul
             id="mobileMenu"
-            class="flex max-h-0 w-screen flex-col gap-3 overflow-hidden text-center transition-all duration-500 md:max-h-full md:w-auto md:flex-row md:justify-end md:gap-5 md:px-4"
+            class="flex max-h-0 w-screen flex-col gap-3 overflow-hidden text-center font-bold transition-all duration-500 md:max-h-full md:w-auto md:flex-row md:justify-end md:gap-5 md:px-4"
           >
             <li>
               <a
@@ -79,44 +81,44 @@
     <main>
       <section
         id="hero"
-        class="mx-auto h-screen pt-10 md:bg-[url('/img/hero-cmaq.jpeg')] md:bg-cover md:bg-center"
+        class="mx-auto h-screen pt-14 md:bg-[url('/img/hero-cmaq.jpeg')] md:bg-cover md:bg-center"
       >
-        <div
-          class="h-full from-white/20 from-30% via-white/20 via-60% to-transparent to-55% md:bg-linear-to-r"
-        >
-          <div class="container-cmaq flex h-full flex-row">
-            <div
-              class="flex h-full flex-col justify-center gap-4 md:mx-0 md:w-1/2"
-            >
+        <div class="h-full md:bg-black/20">
+          <div class="container-cmaq h-full">
+            <div class="flex h-full flex-col justify-center gap-4">
               <img
                 src="/img/hero-cmaq.jpeg"
                 alt="hero"
                 class="h-full rounded-lg object-cover object-right shadow-md md:hidden"
               />
               <h1
-                class="text-3xl font-extrabold text-balance md:mx-0 md:max-w-[24rem] md:text-6xl"
+                class="text-3xl font-extrabold text-balance md:mx-0 md:max-w-108 md:text-7xl md:text-white md:[-webkit-text-stroke-color:black] md:[-webkit-text-stroke-width:0.2px]"
               >
                 MONTAMOS EL FUTURO DE LA ENERGÍA SOLAR
               </h1>
-              <p class="md:max-w-[24rem]">
+              <p class="md:max-w-[24rem] md:text-lg md:text-white">
                 Especialistas en montaje de estructuras fotovoltaicas para
                 proyectos a gran escala.
               </p>
-              <button
-                id="btn"
-                class="bg-steel text-cream flex w-full max-w-96 justify-between gap-2 rounded-lg px-4 py-4 shadow-md md:mt-20"
-              >
-                <div class="size-6"></div>
-                <p>NUESTROS SERVICIOS</p>
-                <svg class="size-6 text-white">
-                  <use href="./assets/sprite.svg#short-arrow-right" />
-                </svg>
-              </button>
-              <button
-                class="border-navy block w-full max-w-96 rounded-lg border py-4 shadow-md"
-              >
-                COTIZAR PROYECTO
-              </button>
+              <a href="#servicios">
+                <button
+                  id="btn"
+                  class="bg-steel text-cream flex w-full max-w-96 justify-between gap-2 rounded-lg px-4 py-4 shadow-md md:mt-20"
+                >
+                  <div class="size-6"></div>
+                  <p>NUESTROS SERVICIOS</p>
+                  <svg class="size-6 text-white">
+                    <use href="./assets/sprite.svg#short-arrow-right" />
+                  </svg>
+                </button>
+              </a>
+              <a href="#contacto">
+                <button
+                  class="border-navy block w-full max-w-96 rounded-lg border py-4 shadow-md md:border-white md:text-white"
+                >
+                  COTIZAR PROYECTO
+                </button>
+              </a>
             </div>
           </div>
         </div>

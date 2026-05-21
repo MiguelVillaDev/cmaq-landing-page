@@ -6,6 +6,21 @@ navBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("max-h-96");
 });
 
+const hero = document.querySelector("#hero");
+const nav = document.querySelector("nav");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      nav.classList.add("nav-scrolled");
+    } else {
+      nav.classList.remove("nav-scrolled");
+    }
+  });
+});
+
+observer.observe(hero);
+
 const swiper = new Swiper(".swiper", {
   slidesPreview: 1,
   spaceBetween: 30,

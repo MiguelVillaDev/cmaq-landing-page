@@ -14,6 +14,14 @@
   .container-cmaq {
     @apply mx-auto max-w-7xl px-6;
   }
+
+  .nav-scrolled {
+    @apply md:bg-navy;
+  }
+
+  nav {
+    @apply bg-navy md:bg-navy/40;
+  }
 }
 
 .swiper-button-next .swiper-navigation-icon,
