@@ -30,47 +30,33 @@
 
           <ul
             id="mobileMenu"
-            class="flex max-h-0 w-screen flex-col gap-3 overflow-hidden text-center font-bold transition-all duration-500 md:max-h-full md:w-auto md:flex-row md:justify-end md:gap-5 md:px-4"
+            class="flex max-h-0 w-screen flex-col gap-3 overflow-hidden text-center font-bold transition-all duration-500 md:max-h-full md:w-auto md:flex-row md:justify-end md:gap-6 md:px-4"
           >
             <li>
-              <a
-                href="#hero"
-                class="block py-2 transition-colors hover:bg-white"
-                >Inicio</a
-              >
+              <a href="#hero" class="block py-2 transition-colors">Inicio</a>
             </li>
             <li>
-              <a
-                href="#nosotros"
-                class="block py-2 transition-colors hover:bg-white"
+              <a href="#nosotros" class="block py-2 transition-colors"
                 >Nosotros</a
               >
             </li>
             <li>
-              <a
-                href="#servicios"
-                class="block py-2 transition-colors hover:bg-white"
+              <a href="#servicios" class="block py-2 transition-colors"
                 >Servicios</a
               >
             </li>
             <li>
-              <a
-                href="#proyectos"
-                class="block py-2 transition-colors hover:bg-white"
+              <a href="#proyectos" class="block py-2 transition-colors"
                 >Proyectos</a
               >
             </li>
             <li>
-              <a
-                href="#compromiso"
-                class="block py-2 transition-colors hover:bg-white"
+              <a href="#compromiso" class="block py-2 transition-colors"
                 >Compromiso</a
               >
             </li>
             <li>
-              <a
-                href="#contacto"
-                class="block py-2 transition-colors hover:bg-white"
+              <a href="#contacto" class="block py-2 transition-colors"
                 >Contacto</a
               >
             </li>
@@ -103,18 +89,18 @@
               <a href="#servicios">
                 <button
                   id="btn"
-                  class="bg-steel text-cream flex w-full max-w-96 justify-between gap-2 rounded-lg px-4 py-4 shadow-md md:mt-20"
+                  class="bg-steel hover:text-navy flex w-full max-w-96 justify-between gap-2 rounded-lg px-4 py-4 text-white shadow-md transition-colors duration-300 hover:bg-white md:mt-20"
                 >
                   <div class="size-6"></div>
                   <p>NUESTROS SERVICIOS</p>
-                  <svg class="size-6 text-white">
+                  <svg class="size-6">
                     <use href="./assets/sprite.svg#short-arrow-right" />
                   </svg>
                 </button>
               </a>
               <a href="#contacto">
                 <button
-                  class="border-navy block w-full max-w-96 rounded-lg border py-4 shadow-md md:border-white md:text-white"
+                  class="border-navy hover:text-navy block w-full max-w-96 rounded-lg border py-4 shadow-md transition-colors duration-300 hover:bg-white md:border-white md:text-white"
                 >
                   COTIZAR PROYECTO
                 </button>
@@ -123,7 +109,10 @@
           </div>
         </div>
       </section>
-      <section id="nosotros" class="py-16">
+      <section
+        id="nosotros"
+        class="bg-[linear-gradient(135deg,white_50%,var(--color-back)_50%)] py-16"
+      >
         <div class="container-cmaq">
           <p class="text-steel">NOSOTROS</p>
           <h2 class="mt-2 mb-4 max-w-96 text-2xl font-bold text-balance">
@@ -206,7 +195,7 @@
                 <img
                   src=""
                   alt="foto"
-                  class="aspect-4/3 w-full rounded-t-lg bg-yellow-400"
+                  class="aspect-4/3 w-full rounded-t-lg bg-gray-200"
                 />
 
                 <svg
@@ -236,7 +225,7 @@
                 <img
                   src=""
                   alt="foto"
-                  class="aspect-4/3 w-full rounded-t-lg bg-yellow-400"
+                  class="aspect-4/3 w-full rounded-t-lg bg-gray-200"
                 />
 
                 <svg
@@ -266,7 +255,7 @@
                 <img
                   src=""
                   alt="foto"
-                  class="aspect-4/3 w-full rounded-t-lg bg-yellow-400"
+                  class="aspect-4/3 w-full rounded-t-lg bg-gray-200"
                 />
 
                 <svg
@@ -293,7 +282,10 @@
           </div>
         </div>
       </section>
-      <section id="proyectos" class="py-16">
+      <section
+        id="proyectos"
+        class="bg-[linear-gradient(135deg,var(--color-back)_40%,white_40%)] py-16"
+      >
         <div class="container-cmaq">
           <p class="text-steel">PROYECTOS</p>
           <h2 class="mt-2 mb-4 text-2xl font-bold text-balance">DESTACADOS</h2>
@@ -302,8 +294,8 @@
               <div
                 class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
               >
-                <img src="" alt="" class="aspect-5/4 bg-amber-400" />
-                <div class="px-6 py-4">
+                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
+                <div class="bg-white px-6 py-4">
                   <h3 class="text-2xl font-semibold">Parque Solar Verano 1</h3>
                   <p class="mt-2">120 MWp - La Serena</p>
                 </div>
@@ -312,8 +304,8 @@
               <div
                 class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
               >
-                <img src="" alt="" class="aspect-5/4 bg-amber-400" />
-                <div class="px-6 py-4">
+                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
+                <div class="bg-white px-6 py-4">
                   <h3 class="text-2xl font-semibold">Parque Solar Verano 2</h3>
                   <p class="mt-2">120 MWp - La Serena</p>
                 </div>
@@ -322,8 +314,8 @@
               <div
                 class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
               >
-                <img src="" alt="" class="aspect-5/4 bg-amber-400" />
-                <div class="px-6 py-4">
+                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
+                <div class="bg-white px-6 py-4">
                   <h3 class="text-2xl font-semibold">Parque Solar Verano 3</h3>
                   <p class="mt-2">120 MWp - La Serena</p>
                 </div>
@@ -332,8 +324,8 @@
               <div
                 class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
               >
-                <img src="" alt="" class="aspect-5/4 bg-amber-400" />
-                <div class="px-6 py-4">
+                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
+                <div class="bg-white px-6 py-4">
                   <h3 class="text-2xl font-semibold">Parque Solar Verano 4</h3>
                   <p class="mt-2">120 MWp - La Serena</p>
                 </div>
@@ -343,6 +335,19 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+          </div>
+          <div class="pt-4">
+            <div class="flex justify-end">
+              <a
+                href="/proyectos.html "
+                class="flex flex-row items-center justify-end gap-4"
+              >
+                <p>VER MÁS</p>
+                <svg class="size-10">
+                  <use href="/assets/sprite.svg#arrow-right" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -412,7 +417,10 @@
           </div>
         </div>
       </section>
-      <section id="contacto" class="py-16">
+      <section
+        id="contacto"
+        class="bg-[linear-gradient(135deg,white_50%,var(--color-back)_50%)] py-16"
+      >
         <div class="container-cmaq">
           <div
             class="bg-navy gap-4 rounded-lg px-4 py-16 text-balance text-white"
@@ -427,15 +435,17 @@
                 </p>
               </div>
               <div class="flex w-full items-end">
-                <button
-                  class="bg-steel flex w-full max-w-80 justify-between rounded-md px-4 py-4"
-                >
-                  <div></div>
-                  <p>SOLICITAR CONTACTO</p>
-                  <svg class="size-6">
-                    <use href="/assets/sprite.svg#short-arrow-right" />
-                  </svg>
-                </button>
+                <a href="/contacto.html" target="_blank" class="w-full">
+                  <button
+                    class="bg-steel hover:text-navy flex w-full max-w-96 justify-between rounded-md px-4 py-4 transition-colors duration-300 hover:bg-white"
+                  >
+                    <div></div>
+                    <p>SOLICITAR CONTACTO</p>
+                    <svg class="size-6">
+                      <use href="/assets/sprite.svg#short-arrow-right" />
+                    </svg>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
