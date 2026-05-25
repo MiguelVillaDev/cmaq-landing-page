@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <script src="/js/contacto.js" type="module"></script>
+    <title>Contacto C.MAQ</title>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-navy fixed top-0 left-0 z-50 w-full text-white">
+        <div
+          class="mx-auto flex max-w-7xl flex-wrap items-center justify-between py-2 md:flex md:flex-nowrap"
+        >
+          <a href="/index.html" class="mx-8">// CMAQ</a>
+
+          <button id="navBtn">
+            <svg class="mx-8 size-6 md:hidden">
+              <use href="/assets//sprite.svg#menu" />
+            </svg>
+          </button>
+
+          <ul
+            id="mobileMenu"
+            class="flex max-h-0 w-screen flex-col gap-3 overflow-hidden text-center font-bold transition-all duration-500 md:max-h-full md:w-auto md:flex-row md:justify-end md:gap-5 md:px-4"
+          >
+            <li>
+              <a
+                href="/index.html#hero"
+                class="block py-2 transition-colors hover:bg-white"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html#nosotros"
+                class="block py-2 transition-colors hover:bg-white"
+                >Nosotros</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#servicios"
+                class="block py-2 transition-colors hover:bg-white"
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#servicios"
+                class="block py-2 transition-colors hover:bg-white"
+                >Proyectos</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#compromiso"
+                class="block py-2 transition-colors hover:bg-white"
+                >Compromiso</a
+              >
+            </li>
+            <li>
+              <a
+                href="contacto.html"
+                class="block py-2 transition-colors hover:bg-white"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="w-screen bg-[linear-gradient(135deg,white_50%,var(--color-back)_50%)] pb-16 md:h-screen"
+      >
+        <div
+          class="container-cmaq h-full w-full justify-center pt-10 md:flex md:flex-row md:pt-14"
+        >
+          <div class="flex shrink-0 items-center justify-center md:w-1/2">
+            <img src="/img/Logo Preliminar 1.png" alt="" />
+          </div>
+          <div
+            class="md:1/2 flex w-full flex-col justify-center gap-10 rounded-lg bg-white px-4 pb-4 md:mt-16 md:shadow-lg"
+          >
+            <div class="md:pt-8">
+              <p class="text-steel font-semibold">CONTACTO</p>
+              <h2 class="text-2xl font-bold text-balance">
+                RELLENA EL SIGUIENTE FORMULARIO
+              </h2>
+            </div>
+            <form
+              action="https://formspree.io/f/mykvjrgq"
+              method="post"
+              class="flex flex-col gap-4"
+            >
+              <div class="flex flex-col">
+                <label for="nombre">Nombre y Apellido</label>
+                <input
+                  id="nombre"
+                  type="text"
+                  name="nombre"
+                  required
+                  class="border-navy rounded-md border px-2 py-1.5"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label for="empresa">Empresa</label>
+                <input
+                  id="empresa"
+                  type="text"
+                  name="empresa"
+                  class="border-navy rounded-md border px-2 py-1.5"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label for="pais">País</label>
+                <input
+                  id="pais"
+                  type="text"
+                  name="pais"
+                  required
+                  class="border-navy rounded-md border px-2 py-1.5"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label for="correo">Correo</label>
+                <input
+                  id="correo"
+                  type="email"
+                  name="correo"
+                  required
+                  class="border-navy rounded-md border px-2 py-1.5"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label for="numero">Celular o Teléfono</label>
+                <input
+                  id="numero"
+                  type="number"
+                  name="telefono"
+                  required
+                  class="border-navy rounded-md border px-2 py-1.5"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  id="mensaje"
+                  rows="2"
+                  name="mensaje"
+                  class="border-navy rounded-md border px-2 py-1.5"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                id="contactBtn"
+                class="border-navy bg-steel w-full rounded-md border py-4 text-white transition-colors duration-300 hover:bg-[#4a6d8c]"
+              >
+                ENVIAR SOLICITUD
+              </button>
+              <p
+                id="errorMsj"
+                class="hidden text-center text-xs font-semibold text-red-400"
+              >
+                HUBO UN ERROR AL ENVIAR EL FORMULARIO, VUELVE A INTENTARLO.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-navy mx-auto w-screen">
+      <div
+        class="container-cmaq flex flex-col gap-8 py-12 text-sm text-white md:flex-row md:justify-around"
+      >
+        <p class="font-semibold">CMAQ</p>
+
+        <div class="flex flex-col gap-4">
+          <h2 class="font-bold">CONTACTO</h2>
+          <div class="flex flex-row gap-2 text-xs">
+            <svg class="size-4">
+              <use href="/assets/sprite.svg#phone" />
+            </svg>
+            <p>+56 9 65008797</p>
+          </div>
+          <div class="flex flex-row gap-2 text-xs">
+            <svg class="size-4">
+              <use href="/assets/sprite.svg#mail" />
+            </svg>
+            <p>contacto@cmaq.cl</p>
+          </div>
+          <div class="flex flex-row gap-2 text-xs">
+            <svg class="size-4">
+              <use href="/assets/sprite.svg#location" />
+            </svg>
+            <p>Chile - Perú</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h2 class="font-bold">SÍGUENOS</h2>
+          <div class="flex flex-row divide-x-2">
+            <div class="pr-4">
+              <svg class="size-6">
+                <use href="/assets/sprite.svg#instagram" />
+              </svg>
+            </div>
+            <div class="pl-4">
+              <svg class="size-6">
+                <use href="/assets/sprite.svg#facebook" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="w-full text-center text-xs text-white">
+        CMAQ - Copyright © Derechos Reservados
+      </p>
+    </footer>
+  </body>
+</html>
