@@ -1,4 +1,5 @@
 /*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -8,7 +9,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
-    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-black: #000;
@@ -21,12 +21,20 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -40,8 +48,8 @@
     --color-navy: #1d2d44;
     --color-steel: #3e5c76;
     --color-mist: #748cab;
-    --color-cream: #f0ebd8;
     --color-back: #b8cad8;
+    --font-inter: "Inter", sans-serif;
   }
 }
 @layer base {
@@ -217,9 +225,6 @@
   .z-50 {
     z-index: 50;
   }
-  .mx-0 {
-    margin-inline: calc(var(--spacing) * 0);
-  }
   .mx-8 {
     margin-inline: calc(var(--spacing) * 8);
   }
@@ -237,9 +242,6 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
-  }
-  .box-border {
-    box-sizing: border-box;
   }
   .block {
     display: block;
@@ -280,9 +282,6 @@
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
-  }
-  .h-14 {
-    height: calc(var(--spacing) * 14);
   }
   .h-full {
     height: 100%;
@@ -463,6 +462,9 @@
   .bg-\[linear-gradient\(135deg\,white_50\%\,var\(--color-back\)_50\%\)\] {
     background-image: linear-gradient(135deg,white 50%,var(--color-back) 50%);
   }
+  .bg-\[url\(\'\/img\/hero-cmaq\.jpeg\'\)\] {
+    background-image: url('/img/hero-cmaq.jpeg');
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -474,9 +476,6 @@
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
-  }
-  .px-0 {
-    padding-inline: calc(var(--spacing) * 0);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -498,9 +497,6 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -526,6 +522,9 @@
   .pt-14 {
     padding-top: calc(var(--spacing) * 14);
   }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
+  }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
   }
@@ -534,6 +533,9 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-9 {
+    padding-bottom: calc(var(--spacing) * 9);
   }
   .pb-11 {
     padding-bottom: calc(var(--spacing) * 11);
@@ -547,6 +549,9 @@
   .text-center {
     text-align: center;
   }
+  .font-inter {
+    font-family: var(--font-inter);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -555,9 +560,25 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-xs {
     font-size: var(--text-xs);
@@ -795,11 +816,6 @@
       }
     }
   }
-  .md\:bg-\[url\(\'\.\/img\/hero-cmaq\.jpeg\'\)\] {
-    @media (width >= 48rem) {
-      background-image: url('./img/hero-cmaq.jpeg');
-    }
-  }
   .md\:bg-\[url\(\'\/img\/hero-cmaq\.jpeg\'\)\] {
     @media (width >= 48rem) {
       background-image: url('/img/hero-cmaq.jpeg');
@@ -835,6 +851,12 @@
       padding-top: calc(var(--spacing) * 14);
     }
   }
+  .md\:text-2xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
   .md\:text-7xl {
     @media (width >= 48rem) {
       font-size: var(--text-7xl);
@@ -868,55 +890,12 @@
       -webkit-text-stroke-width: 0.2px;
     }
   }
-  .md\:hover\:border-b-2 {
-    @media (width >= 48rem) {
-      &:hover {
-        @media (hover: hover) {
-          border-bottom-style: var(--tw-border-style);
-          border-bottom-width: 2px;
-        }
-      }
-    }
-  }
   .md\:hover\:border-b-3 {
     @media (width >= 48rem) {
       &:hover {
         @media (hover: hover) {
           border-bottom-style: var(--tw-border-style);
           border-bottom-width: 3px;
-        }
-      }
-    }
-  }
-  .md\:hover\:text-navy {
-    @media (width >= 48rem) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-navy);
-        }
-      }
-    }
-  }
-  .md\:hover\:inset-shadow-amber-100 {
-    @media (width >= 48rem) {
-      &:hover {
-        @media (hover: hover) {
-          --tw-inset-shadow-color: oklch(96.2% 0.059 95.617);
-          @supports (color: color-mix(in lab, red, red)) {
-            --tw-inset-shadow-color: color-mix(in oklab, var(--color-amber-100) var(--tw-inset-shadow-alpha), transparent);
-          }
-        }
-      }
-    }
-  }
-  .md\:hover\:inset-shadow-cream {
-    @media (width >= 48rem) {
-      &:hover {
-        @media (hover: hover) {
-          --tw-inset-shadow-color: #f0ebd8;
-          @supports (color: color-mix(in lab, red, red)) {
-            --tw-inset-shadow-color: color-mix(in oklab, var(--color-cream) var(--tw-inset-shadow-alpha), transparent);
-          }
         }
       }
     }
@@ -971,6 +950,12 @@
   .lg\:px-0 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:text-8xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
     }
   }
 }
