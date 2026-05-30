@@ -29,7 +29,9 @@
     @apply bg-navy md:bg-navy/40;
   }
 
-  /* s */
+  .heroImg {
+    background-image: url("../img/CMAQ-Hero.png");
+  }
 }
 
 .swiper-button-next .swiper-navigation-icon,
