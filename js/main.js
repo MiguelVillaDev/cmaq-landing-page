@@ -2,8 +2,11 @@ const navBtn = document.getElementById("navBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
 navBtn.addEventListener("click", () => {
-  /* mobileMenu.classList.toggle("max-h-0"); */
   mobileMenu.classList.toggle("max-h-96");
+});
+
+mobileMenu.addEventListener("click", () => {
+  mobileMenu.classList.remove("max-h-96");
 });
 
 const hero = document.querySelector("#hero");
