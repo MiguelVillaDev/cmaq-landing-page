@@ -5,8 +5,32 @@ navBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("max-h-96");
 });
 
-mobileMenu.addEventListener("click", () => {
+mobileMenu.addEventListener("click", (event) => {
   mobileMenu.classList.remove("max-h-96");
+});
+
+//Código para que el navbar se posicione correctamente.
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+    const navHeightFull = document.querySelector("nav").offsetHeight;
+    const navHeightMobile = 56;
+
+    if (targetElement) {
+      const elementPosition =
+        targetElement.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition =
+        elementPosition - (navBtn ? navHeightMobile : navHeightFull);
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  });
 });
 
 const hero = document.querySelector("#hero");
