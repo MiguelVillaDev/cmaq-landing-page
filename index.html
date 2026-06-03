@@ -501,11 +501,9 @@
         class="bg-[linear-gradient(135deg,white_50%,var(--color-back)_50%)] py-16"
       >
         <div class="container-cmaq">
-          <div
-            class="bg-navy gap-4 rounded-lg px-4 py-16 text-balance text-white"
-          >
-            <div class="flex flex-col gap-8 md:flex-row lg:max-w-3/4">
-              <div class="w-full">
+          <div class="bg-navy rounded-lg px-4 py-16 text-balance text-white">
+            <div class="flex flex-col gap-8 md:flex-row">
+              <div>
                 <h2 class="max-w-85 text-3xl font-bold">
                   ¿TIENES UN PROYECTO EN MENTE?
                 </h2>
@@ -513,18 +511,39 @@
                   Conversemos y llevemos tu proyecto al siguiente nivel.
                 </p>
               </div>
-              <div class="flex w-full items-end">
-                <a href="./contacto.html" target="_blank" class="w-full">
-                  <button
-                    class="bg-steel hover:text-navy flex w-full max-w-96 justify-between rounded-md px-4 py-4 transition-colors duration-300 hover:bg-white"
+              <div class="flex flex-col gap-4 lg:flex-row">
+                <div class="flex w-full flex-col gap-4 lg:w-75">
+                  <p>Rellena nuestro formulario de contacto</p>
+                  <a href="./contacto.html" target="_blank" class="w-full">
+                    <button
+                      class="bg-steel hover:text-navy flex w-full max-w-96 justify-between rounded-md px-4 py-4 transition-colors duration-300 hover:bg-white"
+                    >
+                      <div></div>
+                      <p>SOLICITAR CONTACTO</p>
+                      <svg class="size-6">
+                        <use href="./assets/sprite.svg#short-arrow-right" />
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+
+                <div class="flex w-full flex-col gap-4 lg:w-75">
+                  <p>O mándanos un mensaje directamente!</p>
+                  <a
+                    href="https://web.whatsapp.com/"
+                    target="_blank"
+                    class="w-full"
                   >
-                    <div></div>
-                    <p>SOLICITAR CONTACTO</p>
-                    <svg class="size-6">
-                      <use href="./assets/sprite.svg#short-arrow-right" />
-                    </svg>
-                  </button>
-                </a>
+                    <button
+                      class="bg-steel flex w-full max-w-96 justify-center gap-4 rounded-md px-4 py-4 transition-colors duration-300 hover:bg-[#25D366]"
+                    >
+                      <p>Whatsapp</p>
+                      <svg class="size-6">
+                        <use href="./assets/sprite.svg#whatsapp" />
+                      </svg>
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -568,14 +587,28 @@
           <h2 class="font-bold">SÍGUENOS</h2>
           <div class="flex flex-row divide-x-2">
             <div class="pr-4">
-              <svg class="size-6">
-                <use href="./assets/sprite.svg#instagram" />
-              </svg>
+              <a href="https://www.instagram.com/transportec.maq/">
+                <svg class="size-6">
+                  <use href="./assets/sprite.svg#instagram" />
+                </svg>
+              </a>
             </div>
+            <div class="px-4">
+              <a
+                href="https://www.facebook.com/p/Transporte-CMAQ-100066401630200/"
+              >
+                <svg class="size-6">
+                  <use href="./assets/sprite.svg#facebook" />
+                </svg>
+              </a>
+            </div>
+
             <div class="pl-4">
-              <svg class="size-6">
-                <use href="./assets/sprite.svg#facebook" />
-              </svg>
+              <a href="https://web.whatsapp.com/">
+                <svg class="size-6">
+                  <use href="./assets/sprite.svg#whatsapp" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
