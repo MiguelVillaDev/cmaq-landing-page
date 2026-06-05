@@ -32,6 +32,10 @@
   .heroImg {
     background-image: url("../img/CMAQ-Hero.png");
   }
+
+  .conImg {
+    background-image: url("../img/PFV-SANJOSE-BG.jpeg");
+  }
 }
 
 .swiper-button-next .swiper-navigation-icon,
