@@ -33,6 +33,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// Cambio de Navbar de transparente a color.
 const hero = document.querySelector("#hero");
 const nav = document.querySelector("nav");
 
@@ -47,6 +48,20 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(hero);
+
+const observador = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animation");
+    } else {
+      entry.target.classList.remove("animation");
+    }
+  });
+});
+
+document
+  .querySelectorAll(".animation-tw")
+  .forEach((sec) => observador.observe(sec));
 
 const swiper = new Swiper(".swiper", {
   slidesPreview: 1,

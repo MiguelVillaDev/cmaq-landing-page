@@ -36,6 +36,10 @@
   .conImg {
     background-image: url("../img/PFV-SANJOSE-BG.jpeg");
   }
+
+  .animation {
+    @apply animate-fade-in-up animate-duration-1000;
+  }
 }
 
 html {

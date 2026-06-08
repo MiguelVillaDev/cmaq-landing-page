@@ -36,6 +36,8 @@
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -985,6 +987,11 @@
   }
   .conImg {
     background-image: url("../img/PFV-SANJOSE-BG.jpeg");
+  }
+  .animation {
+    animation: fade-in-up 0.6s ease-in-out both;
+    animation-duration: calc(1000 * 1ms);
+    animation-duration: 1000ms;
   }
 }
 html {
