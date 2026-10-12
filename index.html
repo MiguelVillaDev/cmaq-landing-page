@@ -8,78 +8,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="./js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/componente.js" type="module"></script>
 
     <title>Grupo C.MAQ</title>
   </head>
   <body class="text-navy font-inter bg-white">
-    <header>
-      <nav
-        class="fixed top-0 left-0 z-50 w-full text-white transition-colors duration-300 md:h-20"
-      >
-        <div
-          class="mx-auto flex max-w-7xl flex-wrap items-center justify-between py-4 md:flex md:h-full md:flex-nowrap md:py-0"
-        >
-          <a href="#hero" class="pl-4"
-            ><img class="h-6 md:h-10 lg:h-12" src="./img/Navbar.png" alt="logo"
-          /></a>
-
-          <button id="navBtn">
-            <svg class="mx-8 size-6 md:hidden">
-              <use href="./assets//sprite.svg#menu" />
-            </svg>
-          </button>
-
-          <ul
-            id="mobileMenu"
-            class="flex max-h-0 w-full flex-col gap-3 overflow-hidden text-center font-bold transition-all duration-500 md:max-h-full md:w-auto md:flex-row md:justify-end md:gap-6 md:px-4"
-          >
-            <li>
-              <a
-                href="#hero"
-                class="block h-10 border-white py-2 transition-colors md:box-border md:hover:border-b-3"
-                >Inicio</a
-              >
-            </li>
-            <li>
-              <a
-                href="#nosotros"
-                class="block h-10 border-white py-2 transition-colors md:box-border md:hover:border-b-3"
-                >Nosotros</a
-              >
-            </li>
-            <li>
-              <a
-                href="#servicios"
-                class="block h-10 border-white py-2 transition-colors md:box-border md:hover:border-b-3"
-                >Servicios</a
-              >
-            </li>
-            <li>
-              <a
-                href="#proyectos"
-                class="block h-10 border-white py-2 transition-colors md:box-border md:hover:border-b-3"
-                >Proyectos</a
-              >
-            </li>
-            <li>
-              <a
-                href="#compromiso"
-                class="block h-10 border-white py-2 transition-colors md:box-border md:hover:border-b-3"
-                >Compromiso</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contacto"
-                class="block h-10 border-white py-2 transition-colors md:box-border md:hover:border-b-3"
-                >Contacto</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <div id="navbar"></div>
     <main>
       <section
         id="hero"
@@ -91,11 +26,18 @@
           >
             <div class="flex h-full flex-col justify-center gap-6">
               <div class="flex flex-col gap-6">
-                <h1
-                  class="text-4xl font-bold text-balance text-white md:mx-0 md:max-w-108 md:text-7xl"
-                >
-                  SERVICIOS ESPECIALIZADOS CONSTRUIMOS CONFIANZA
-                </h1>
+                <div class="flex flex-col gap-2">
+                  <h1
+                    class="text-4xl font-bold text-balance text-white md:mx-0 md:max-w-108 md:text-7xl"
+                  >
+                    SERVICIOS ESPECIALIZADOS
+                  </h1>
+                  <h1
+                    class="text-2xl font-bold text-balance text-white md:mx-0 md:max-w-108 md:text-5xl"
+                  >
+                    CONSTRUIMOS CONFIANZA
+                  </h1>
+                </div>
                 <p class="text-lg text-white md:max-w-[24rem] md:text-2xl">
                   Impulsamos proyectos con soluciones integrales
                 </p>
@@ -132,7 +74,7 @@
           </h2>
 
           <div class="mb-4 flex flex-col gap-4 md:flex-row">
-            <div class="md:w-1/2">
+            <div class="md:w-1/2 lg:flex lg:items-center">
               <p class="text-justify lg:text-lg">
                 Somos una empresa especializada en el montaje mecánico de
                 estructuras para parques fotovoltaicos, ofreciendo servicios
@@ -144,7 +86,7 @@
             </div>
             <div class="md:w-1/2">
               <img
-                src="./img/PFV-SANJOSE-BG.jpeg"
+                src="./img/proyectos/PFV-SANJOSE-BG.jpeg"
                 alt=""
                 class="h-full bg-cover bg-top"
               />
@@ -198,9 +140,9 @@
       <section id="servicios" class="py-16">
         <div id="us" class="animation-tw container-cmaq">
           <p class="text-steel text-xl">SERVICIOS</p>
-          <div class="">
+          <div class="lg:flex lg:flex-row lg:gap-4">
             <h2
-              class="mt-2 mb-4 text-3xl font-bold text-balance lg:float-left lg:mr-16 lg:mb-4 lg:max-w-96"
+              class="mt-2 mb-4 shrink-0 text-3xl font-bold text-balance lg:mb-4 lg:max-w-96"
             >
               SOLUCIONES INTEGRALES PARA CADA PROYECTO
             </h2>
@@ -210,9 +152,7 @@
               de calidad, seguridad y cumplimiento. Nuestra experiencia en
               terreno nos ha permitido desarrollar metodologías de trabajo
               efectivas, optimizar procesos y adaptarnos a las necesidades
-              específicas de cada proyecto. Contamos con personal calificado y
-              equipos adecuados para una ejecución segura, ordenada y confiable,
-              aportando al cumplimiento de los objetivos de nuestros clientes.
+              específicas de cada proyecto.
             </p>
           </div>
 
@@ -309,6 +249,17 @@
               </div>
             </div>
           </div>
+          <!-- <div class="flex justify-end pt-4">
+            <a
+              href="./servicios.html "
+              class="flex flex-row items-center justify-end gap-4"
+            >
+              <p>VER MÁS</p>
+              <svg class="size-10">
+                <use href="./assets/sprite.svg#arrow-right" />
+              </svg>
+            </a>
+          </div> -->
         </div>
       </section>
       <section
@@ -319,137 +270,13 @@
           <p class="text-steel text-xl">PROYECTOS</p>
           <h2 class="mt-2 mb-4 text-3xl font-bold text-balance">DESTACADOS</h2>
           <div class="swiper">
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">
-                    Parque Solar San Alberto
-                  </h3>
-                  <p class="mt-2">Chillán, Chile.</p>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">
-                    Parque Solar Liebre de Verano
-                  </h3>
-                  <p class="mt-2">Isla de Maipo, Chile.</p>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">
-                    Parque Solar Antonia Solar
-                  </h3>
-                  <p class="mt-2">El Peñón, Chile.</p>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">Parque Solar El Manzáno</h3>
-                  <p class="mt-2">Tiltil, Chile.</p>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">
-                    Parque Solar Don Humberto
-                  </h3>
-                  <p class="mt-2">Tiltil, Chile.</p>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img
-                  src="./img/PFV-LEYDA.jpg"
-                  alt=""
-                  class="aspect-5/4 bg-gray-200"
-                />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">Parque Solar Leyda</h3>
-                  <p class="mt-2">San Antonio, Chile.</p>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img src="" alt="" class="aspect-5/4 bg-gray-200" />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">Parque Solar Estepa</h3>
-                  <p class="mt-2">María Elena, Chile.</p>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img
-                  src="./img/PFV-SUNNY-II.jpeg"
-                  alt=""
-                  class="aspect-5/4 bg-gray-200"
-                />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">Parque Solar Sunny</h3>
-                  <p class="mt-2">La Joya, Perú.</p>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img
-                  src="./img/PFV-INTIPAMPA.jpeg"
-                  alt=""
-                  class="aspect-5/4 bg-gray-200"
-                />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">Parque Solar Intipampa</h3>
-                  <p class="mt-2">Moquegua, Perú.</p>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md"
-              >
-                <img
-                  src="./img/PFV-SANJOSE.jpeg"
-                  alt=""
-                  class="aspect-5/4 bg-gray-200"
-                />
-                <div class="bg-white px-6 py-4">
-                  <h3 class="text-xl font-semibold">Parque Solar San José</h3>
-                  <p class="mt-2">Arequipa, Perú.</p>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-wrapper"></div>
 
             <!-- If we need navigation buttons -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
-          <div class="pt-4">
+          <!-- <div class="pt-4">
             <div class="flex justify-end">
               <a
                 href="./proyectos.html "
@@ -461,7 +288,7 @@
                 </svg>
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section id="compromiso" class="py-16">
@@ -583,72 +410,7 @@
       </section>
     </main>
     <footer class="bg-navy mx-auto w-screen">
-      <div
-        class="container-cmaq flex flex-col gap-6 py-8 text-sm text-white md:flex-row md:justify-around"
-      >
-        <a href="#hero">
-          <img
-            class="h-18 object-contain md:h-24 xl:h-32"
-            src="./img/CMAQ-full-white.png"
-            alt="logo"
-          />
-        </a>
-
-        <div class="flex flex-col gap-4">
-          <h2 class="font-bold">CONTACTO</h2>
-          <div class="flex flex-row gap-2 text-xs">
-            <svg class="size-4">
-              <use href="./assets/sprite.svg#phone" />
-            </svg>
-            <p>+56 9 65008797</p>
-          </div>
-          <div class="flex flex-row gap-2 text-xs">
-            <svg class="size-4">
-              <use href="./assets/sprite.svg#mail" />
-            </svg>
-            <p>contacto@cmaq.cl</p>
-          </div>
-          <div class="flex flex-row gap-2 text-xs">
-            <svg class="size-4">
-              <use href="./assets/sprite.svg#location" />
-            </svg>
-            <p>Chile - Perú</p>
-          </div>
-        </div>
-        <div class="flex flex-col gap-4">
-          <h2 class="font-bold">SÍGUENOS</h2>
-          <div class="flex flex-row divide-x-2">
-            <div class="pr-4">
-              <a href="https://www.instagram.com/transportec.maq/">
-                <svg class="size-6">
-                  <use href="./assets/sprite.svg#instagram" />
-                </svg>
-              </a>
-            </div>
-            <div class="px-4">
-              <a
-                href="https://www.facebook.com/p/Transporte-CMAQ-100066401630200/"
-              >
-                <svg class="size-6">
-                  <use href="./assets/sprite.svg#facebook" />
-                </svg>
-              </a>
-            </div>
-
-            <div class="pl-4">
-              <a href="https://web.whatsapp.com/">
-                <svg class="size-6">
-                  <use href="./assets/sprite.svg#whatsapp" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="w-full pb-2 text-center text-xs text-white">
-        CMAQ - Copyright © Derechos Reservados
-      </p>
+      <div id="footer"></div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </body>
 </html>
