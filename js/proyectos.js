@@ -68,7 +68,7 @@ export const proyectos = [
   {
     nombre: "Parque Solar Sunny II",
     ubicacion: "La Joya, Perú.",
-    imagen: "./img/img/proyectos/PFV-SUNNY-II.jpeg",
+    imagen: "./img/proyectos/PFV-SUNNY-II.jpeg",
     year: 2025,
   },
   {
