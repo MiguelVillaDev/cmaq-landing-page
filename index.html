@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Empresa especializada en montaje mecánico de estructuras para parques fotovoltaicos en Chile y Perú. Más de 17 proyectos ejecutados con altos estándares de calidad y seguridad."
+    />
+    <meta
+      name="keywords"
+      content="montaje fotovoltaico, parques solares, estructuras fotovoltaicas, montaje mecánico, energía solar Chile, parques fotovoltaicos Perú"
+    />
+    <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="./src/output.css" />
     <link
       rel="stylesheet"
@@ -11,16 +20,26 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/componente.js" type="module"></script>
 
-    <title>Grupo C.MAQ</title>
+    <title>Grupo C.MAQ | Montaje de Estructuras Fotovoltaicas</title>
   </head>
   <body class="text-navy font-inter bg-white">
     <div id="navbar"></div>
     <main>
       <section
         id="hero"
-        class="heroImg mx-auto h-screen pt-14 md:bg-cover md:bg-center md:pt-20"
+        class="relative h-screen pt-14 md:bg-cover md:bg-center md:pt-20"
       >
-        <div class="h-full md:bg-black/20">
+        <video
+          class="absolute inset-0 h-full w-full object-cover"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+
+        <div class="absolute inset-0 bg-black/60 md:bg-black/60"></div>
+
+        <div class="relative h-full md:bg-black/20">
           <div
             class="container-cmaq animate-slide-up-fade animate-duration-1500 h-full"
           >
@@ -33,7 +52,7 @@
                     SERVICIOS ESPECIALIZADOS
                   </h1>
                   <h1
-                    class="text-2xl font-bold text-balance text-white md:mx-0 md:max-w-108 md:text-5xl"
+                    class="text-4xl font-bold text-balance text-white md:mx-0 md:max-w-108 md:text-5xl"
                   >
                     CONSTRUIMOS CONFIANZA
                   </h1>
@@ -86,7 +105,7 @@
             </div>
             <div class="md:w-1/2">
               <img
-                src="./img/proyectos/PFV-SANJOSE-BG.jpeg"
+                src="./img/proyectos/full/QUIENES-SOMOS.jpeg"
                 alt=""
                 class="h-full bg-cover bg-top"
               />
@@ -162,7 +181,7 @@
             <div class="">
               <div class="relative">
                 <img
-                  src=""
+                  src="./img/proyectos/thumbs/MONTAJE-FOTOVOLTAICO.webp"
                   alt="foto"
                   class="aspect-4/3 w-full rounded-t-lg bg-gray-200"
                 />
@@ -192,7 +211,7 @@
             <div class="">
               <div class="relative">
                 <img
-                  src=""
+                  src="./img/proyectos/thumbs/APOYO-EN-TERRENO.jpg"
                   alt="foto"
                   class="aspect-4/3 w-full rounded-t-lg bg-gray-200"
                 />
@@ -222,7 +241,7 @@
             <div class="">
               <div class="relative">
                 <img
-                  src=""
+                  src="./img/proyectos/thumbs/gestion-proyectos-mobile.webp"
                   alt="foto"
                   class="aspect-4/3 w-full rounded-t-lg bg-gray-200"
                 />
@@ -362,7 +381,7 @@
         class="bg-[linear-gradient(135deg,white_50%,var(--color-back)_50%)] py-16"
       >
         <div class="container-cmaq animation-tw">
-          <div class="conImg rounded-lg bg-cover bg-top">
+          <div class="conImg rounded-lg bg-cover bg-top md:bg-center">
             <div
               class="from-navy rounded-lg to-transparent px-4 py-16 text-balance text-white md:bg-linear-to-r"
             >

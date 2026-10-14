@@ -157,4 +157,14 @@ export const initPage = () => {
       )
       .join("");
   }
+
+  const video = document.querySelector("#hero video");
+  if (video) {
+    const src =
+      window.innerWidth < 768
+        ? "./video/Hero-Mobile.mp4"
+        : "./video/Hero-Full.mp4";
+    video.src = src;
+    video.load();
+  }
 };

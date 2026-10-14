@@ -29,12 +29,10 @@
     @apply bg-navy md:bg-navy/40;
   }
 
-  .heroImg {
-    background-image: url("../img/HERO.png");
-  }
+  
 
   .conImg {
-    background-image: url("../img/proyectos/PFV-SANJOSE-BG.jpeg");
+    background-image: url("../img/proyectos/full/contacto-full.webp");
   }
 
   .animation {

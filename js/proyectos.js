@@ -8,7 +8,7 @@ export const proyectos = [
   {
     nombre: "Parque Solar Liebre de Verano",
     ubicacion: "Isla de Maipo, Chile.",
-    imagen: "",
+    imagen: "./img/proyectos/thumbs/PFV-LIEBRE DE-VERANO.webp",
     year: 2025,
   },
   {
@@ -32,7 +32,25 @@ export const proyectos = [
   {
     nombre: "Parque Solar Leyda",
     ubicacion: "San Antonio, Chile.",
-    imagen: "./img/proyectos/PFV-LEYDA.jpg",
+    imagen: "./img/proyectos/thumbs/PFV LEYDA.webp",
+    year: 2025,
+  },
+  {
+    nombre: "Parque Solar Chillan",
+    ubicacion: "Chillán, Chile.",
+    imagen: "./img/proyectos/thumbs/PFV-CHILLAN.webp",
+    year: 2025,
+  },
+  {
+    nombre: "Parque Solar El Monte",
+    ubicacion: "Chile.",
+    imagen: "./img/proyectos/thumbs/PFV-EL-MONTE.webp",
+    year: 2025,
+  },
+  {
+    nombre: "Parque Solar Pampas",
+    ubicacion: "Taltal, Chile.",
+    imagen: "./img/proyectos/thumbs/PFV-PAMPAS.webp",
     year: 2025,
   },
   {
@@ -44,13 +62,25 @@ export const proyectos = [
   {
     nombre: "Parque Solar Sunny",
     ubicacion: "La Joya, Perú.",
-    imagen: "./img/proyectos/PFV-SUNNY-II.jpeg",
+    imagen: "./img/proyectos/thumbs/PFV-SUNNY-I.webp",
+    year: 2025,
+  },
+  {
+    nombre: "Parque Solar Sunny II",
+    ubicacion: "La Joya, Perú.",
+    imagen: "./img/img/proyectos/PFV-SUNNY-II.jpeg",
     year: 2025,
   },
   {
     nombre: "Parque Solar Intipampa",
     ubicacion: "Moquegua, Perú.",
     imagen: "./img/proyectos/PFV-INTIPAMPA.jpeg",
+    year: 2025,
+  },
+  {
+    nombre: "Parque Solar Illa",
+    ubicacion: "Arequipa, Perú.",
+    imagen: "./img/proyectos/thumbs/PFV-ILLA.webp",
     year: 2025,
   },
   {
@@ -69,6 +99,12 @@ export const proyectos = [
     nombre: "Parque Solar Gabardo",
     ubicacion: "Paine, Chile.",
     imagen: "./img/proyectos/thumbs/PFV-Gabardo.webp",
+    year: 2026,
+  },
+  {
+    nombre: "Parque Solar Oscar",
+    ubicacion: "El Peñon, Chile.",
+    imagen: "./img/proyectos/thumbs/PFV-OSCAR.webp",
     year: 2026,
   },
 ];
