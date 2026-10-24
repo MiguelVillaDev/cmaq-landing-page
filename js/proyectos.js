@@ -32,7 +32,7 @@ export const proyectos = [
   {
     nombre: "Parque Solar Leyda",
     ubicacion: "San Antonio, Chile.",
-    imagen: "./img/proyectos/thumbs/PFV LEYDA.webp",
+    imagen: "./img/proyectos/thumbs/PFV-LEYDA.webp",
     year: 2025,
   },
   {
@@ -56,7 +56,7 @@ export const proyectos = [
   {
     nombre: "Parque Solar Estepa",
     ubicacion: "María Elena, Chile.",
-    imagen: "./img/proyectos/thumbs/PFV ESTEPA.webp",
+    imagen: "./img/proyectos/thumbs/PFV-ESTEPA.webp",
     year: 2025,
   },
   {
